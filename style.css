@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Left side */
+.left {
+    width: 35%;
+    background: #f0f2f5;
+    padding: 20px;
+}
+
+/* Right side */
+.right {
+    width: 65%;
+    padding: 20px;
+}
+
+/* Name */
+h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+/* Tagline */
+.tagline {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* Section title */
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Section spacing */
+.section {
+    margin-bottom: 25px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+}
